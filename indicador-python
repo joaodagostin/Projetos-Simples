@@ -1,0 +1,14 @@
+import time
+from itertools import cycle
+
+ligths = [
+    ("Verde", 2),
+    ("Amarelo", 0.5),
+    ("Vermelho", 2)
+]
+colors = cycle(ligths)
+while True:
+    c,s = next(colors)
+    print(c)
+    time.sleep(s)
+
